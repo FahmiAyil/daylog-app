@@ -1,7 +1,7 @@
 FROM node:10
 MAINTAINER M. Fahmi Ayil ILahi (fahmiayil@gmail.com)
-COPY . /app
-WORKDIR /app
+COPY . /opt/app
+WORKDIR /opt/app
 RUN npm install
 EXPOSE 3000
-ENTRYPOINT ["npm","start"]
+CMD ["npm","start"]
